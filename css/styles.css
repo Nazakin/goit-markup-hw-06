@@ -106,7 +106,7 @@ h1{
 }
 .link{
     text-decoration: none;
-    list-style-type: non
+    list-style-type: none;
 
 
 }
@@ -273,7 +273,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     align-items: center;
 }
 .container{
-    width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -827,4 +827,60 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-label-span{
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 95px;
+}
+@media (max-width:767px) {
+  .menu-list, 
+  .contact-list,
+  .icon-pluses{
+    display: none;
+  }
+  .customer-list,
+  .our-pluses{
+    display: flex;
+    flex-direction: column;
+}
+.our-pluses{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 72px;
+}
+.list-of-pluses{
+display: inline-flex;
+width: auto;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 8px;
+}
+.pluses-text{
+color: #2E2F42;
+
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.72px;
+text-transform: capitalize;
+align-self: stretch;
+}
+.third-section{
+    display: none;
+}
+.team-column{
+    display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 72px;
+}
+.team-member{
+    width: max-content;
+    background-color: #ffffff;
+    align-content: center;
+}
+.team{
+    width:auto;
+
+}
 }
