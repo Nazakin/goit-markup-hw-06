@@ -869,7 +869,7 @@ align-self: stretch;
     display: none;
 }
 .team-column{
-    display: inline-flex;
+    display: flex;
 flex-direction: column;
 align-items: center;
 gap: 72px;
@@ -877,10 +877,41 @@ gap: 72px;
 .team-member{
     width: max-content;
     background-color: #ffffff;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 .team{
     width:auto;
 
 }
+.social-media-list{
+padding-left: 17px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-section-one{
+    align-self: center;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-section-two{
+    align-self: center;
+    
+    margin-bottom: 72px;
+}
+.footer-email{
+    display: block;
+    flex-direction: column;
+}
+.submit-email-button{
+display: inline-flex;
+padding: 8px 24px;
+justify-content: center;
+align-items: center;
+gap: 16px;
 }
