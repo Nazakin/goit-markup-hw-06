@@ -36,6 +36,9 @@ body{
 .contact:focus{
     color: #404bbf
 }
+.mobile-menu-button{
+    display: none;
+}
 h1{
     text-transform: capitalize;
     line-height: 60px;
@@ -834,6 +837,14 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-label-span{
   .icon-pluses{
     display: none;
   }
+ 
+  .container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .customer-list,
   .our-pluses{
     display: flex;
@@ -889,18 +900,19 @@ padding-left: 17px;
 }
 .customer-list{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 72px 16px;
 }
-.customers-link{
-    width: 190px;
-height: 88px;
-flex-shrink: 0;
+.customers{
+    width: calc((100% - 16px) / 2); 
+    height: 88px;
 }
+
 .footer-container{
     display: flex;
     flex-direction: column;
-    align-items: center;justify-content: center;
+    align-items: center;
+    justify-content: center;
 
 }
 .footer-section-one{
@@ -909,14 +921,22 @@ flex-shrink: 0;
     display: flex;
     flex-direction: column;
 }
+.footer-text{
+    text-align: left;
+}
 .footer-section-two{
     align-self: center;
+    text-align: center;
     
     margin-bottom: 72px;
  }
  .footer-email{
     display: block;
+    margin-left: 0;
     flex-direction: column;
+ }
+ .subscribe-text{
+    text-align: center;
  }
  .submit-email-button{
  display: inline-flex;
@@ -929,6 +949,25 @@ flex-shrink: 0;
     align-items: center;
     gap: 24px;
     flex-direction: column;
-
-
 }
+.footer-section-one{
+    margin-right: 0;
+}
+.footer-logo{
+    text-align: center;
+}
+.mobile-menu-button{
+    display: flex;
+    position: relative;
+}
+}
+@media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media screen and (min-width: 1158px) {
+    .container {
+      max-width: 1158px;
+    }
+  }
