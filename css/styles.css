@@ -900,6 +900,7 @@ flex-shrink: 0;
 .footer-container{
     display: flex;
     flex-direction: column;
+    align-items: center;justify-content: center;
 
 }
 .footer-section-one{
@@ -912,23 +913,22 @@ flex-shrink: 0;
     align-self: center;
     
     margin-bottom: 72px;
-}
-.footer-email{
+ }
+ .footer-email{
     display: block;
     flex-direction: column;
-}
+ }
  .submit-email-button{
  display: inline-flex;
  padding: 8px 24px;
  justify-content: center;
  align-items: center;
  gap: 16px;
-}
+ }
  .subscribe-email{
-    display: block;
+    align-items: center;
     gap: 24px;
     flex-direction: column;
-    }
-    
+
 
 }
