@@ -1026,10 +1026,7 @@ align-self: stretch;
     }
      .team-column .team{
         flex-basis: calc((100% - 24px) / 2);
-        width: 264px;
-    }
-    .team-member{
-        width: 264px;
+    
     }
     .third-section{
         display: none;
@@ -1051,7 +1048,7 @@ align-self: stretch;
 
     }
     .footer-section-one{
-        margin-right: 24px;
+        margin-right: 0;
     }
     .footer-email{
         margin-left: 0;
