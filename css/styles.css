@@ -980,6 +980,7 @@ padding-left: 17px;
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
       max-width: 768px;
+      width: 584px;
     }
     .contact-list{
         display: flex;
