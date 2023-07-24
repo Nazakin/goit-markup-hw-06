@@ -837,6 +837,12 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-label-span{
   .icon-pluses{
     display: none;
   }
+  .window{
+    top: 80px;
+    overflow: scroll;
+    transform: translate(-50%) scale(1);
+}
+  
  .burger{
     fill: var(--navy-blue);
  }
@@ -846,6 +852,22 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-label-span{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .first-section{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_off_mob@1x.jpg);
+
+  }
+  .big-text{
+    color:  var(--white,#FFF);
+text-align: center;
+
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
   }
   .button{
     margin-top: 72px;
@@ -1011,6 +1033,9 @@ font-weight: 400;
 line-height: 14px; 
 letter-spacing: 0.48px;
     }
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_off_tab@1x.jpg);
+    }
     .contact-list .aaa{
         padding: 0;
     }
@@ -1112,7 +1137,7 @@ align-self: stretch;
     .menu {
       display: none;
     }
-  }
+}
   
   
   
@@ -1140,7 +1165,7 @@ align-self: stretch;
     display: flex;
     align-items: center;
     justify-content: center;
-  
+    fill: #2E2F42;
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -1208,7 +1233,7 @@ align-self: stretch;
   
  .mobile-menu-text{ 
 color:  #2E2F42;
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -1227,7 +1252,7 @@ align-items: flex-start;
 gap: 40px;
 }
 .mobile-menu-tel{
-    color: var(--slate, #4D5AE5);
+    color: #4D5AE5;
 
 /* Header 2 */
 font-family: Roboto;
@@ -1254,4 +1279,19 @@ letter-spacing: 0.4px;
 align-items: flex-start;
 gap: 56px;
 padding-left: 0px;
+}
+@media (min-resolution: 192dpi) and (max-width:757px){
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_off_mob@2x.jpg);
+    }
+}
+@media (min-resolution: 192dpi) and (min-width:758px) and (max-width:1157px){
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_off_tab@2x.jpg);
+    }
+}
+@media (min-resolution: 192dpi) and (min-width:1158px){
+    .first-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_off_desc@2x.jpg);
+    }
 }
