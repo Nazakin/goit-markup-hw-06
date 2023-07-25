@@ -831,7 +831,7 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-label-span{
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 95px;
+    margin:auto;
 }
 @media screen and (max-width:767px) {
   .menu-list, 
@@ -1151,18 +1151,6 @@ align-self: stretch;
     text-decoration: underline;
   }
   .mobile-menu-close{
-    position: absolute;
-   width: 24px;
-   height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-toggle {
     min-height: 40px;
@@ -1303,5 +1291,10 @@ padding-left: 0px;
 @media (min-width: 1158px){
     .first-section{
         padding: 188px 0;
+    }
+}
+@media (max-width:413px){
+   .menu-container .menu-social-media{
+        gap: 20px;
     }
 }
